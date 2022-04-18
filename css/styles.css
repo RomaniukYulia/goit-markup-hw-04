@@ -127,8 +127,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;   
 }
 
 .header-link {
@@ -136,6 +135,9 @@ body {
 }
 
 .header-contacts-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--second-header-color);
 }
 
@@ -144,12 +146,22 @@ body {
 .header-contacts-link:hover,
 .header-contacts-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
-/*-------- Герой ----------- */
-.hero .container {
-    
+.header-link-svg {
+
+    margin-right: 10px;
+    fill: var(--first-icon-color);
 }
+
+.header-link-svg:hover {
+    fill: var(--accent-color);
+}
+
+
+/*-------- Герой ----------- */
+
 .hero {
     width: 1600px;
     margin-left: auto;
@@ -243,6 +255,17 @@ body {
     margin-right: 30px;
 }
 
+.benefits-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--second-background-color);
+}
+
+
 
 /* --------- Работы --------- */
 
@@ -330,13 +353,13 @@ body {
 }
 
 .team-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     background: #FFFFFF;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--first-icon-color);
 }
 
@@ -349,16 +372,56 @@ body {
     color: var(--second-icon-color);
 }
 
+/* ---------------Клиенты---------------------- */
+
+.clients-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-item +.clients-item {
+    margin-left: 30px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--first-icon-color);
+    border-radius: 4px;
+    color: var(--first-icon-color);
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 
 /* -------------Футер----------- */
 .footer {
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
 }
 
 .footer .logo {
-    /* margin-bottom: 20px; */
     color: var(--second-logo-color) ;
 }
 
@@ -395,6 +458,52 @@ body {
     color: var(--accent-color);
 }
 
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+.footer-main {
+    margin-right: 70px;
+}
+
+.call-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--first-footer-color);
+}
+
+.footer-soc {
+    display: flex;
+    justify-content: center;
+}
+.footer-soc-item + .footer-soc-item {
+    margin-left: 10px;
+}
+
+.footer-soc-link {
+    display: flex;
+    justify-content: center;
+    width: 44px; 
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--second-icon-color);
+
+}
+
+.footer-soc-icon {
+    fill: currentColor;
+}
+
+.footer-soc-link:hover {
+    background-color: var(--accent-color);
+}
+
 
 /* -----------------Портфолио------------ */
 
@@ -415,6 +524,10 @@ body {
 .project-btn:focus {
     background-color: var(--accent-color);
     color: var(--first-btn-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .button {
     font-family: inherit;
@@ -469,7 +582,12 @@ body {
     margin-right: 30px;
     margin-bottom: 30px;
     background: #FFFFFF;
-   
+}
+
+.projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-item:nth-child(3n) {
