@@ -152,12 +152,9 @@ body {
 .header-link-svg {
 
     margin-right: 10px;
-    fill: var(--first-icon-color);
+    fill: currentColor
 }
 
-.header-link-svg:hover {
-    fill: var(--accent-color);
-}
 
 
 /*-------- Герой ----------- */
@@ -367,7 +364,8 @@ body {
     fill: currentColor;
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: var(--accent-color);
     color: var(--second-icon-color);
 }
@@ -407,7 +405,8 @@ body {
     fill: currentColor;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -500,7 +499,8 @@ body {
     fill: currentColor;
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
     background-color: var(--accent-color);
 }
 
@@ -574,6 +574,7 @@ body {
 }
 
 .projects-link {
+    display: block;
     text-decoration: none;
 }
 
@@ -584,7 +585,8 @@ body {
     background: #FFFFFF;
 }
 
-.projects-item:hover {
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
